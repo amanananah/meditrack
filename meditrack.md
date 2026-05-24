@@ -1,24 +1,22 @@
 ---
-
-publishDate: 2026-05-24 
+publishDate: 2026-05-24
 
 title: MediTrack - Intelligent Medication Habit Monitor
 
 excerpt: MediTrack is a smart IoT healthcare system built on the MYOSA platform that detects real medication-taking behavior using motion sensing, promotes adherence through intelligent feedback, and provides real-time monitoring through an OLED interface and live web dashboard.
 
-image: meditrack/meditrack-cover.jpg
+image: meditrack-logo.png
 
 tags:
-
-* healthcare
-* iot
-* esp32
-* medtech
-* myosa
-
+  - healthcare
+  - iot
+  - esp32
+  - medtech
+  - myosa
 ---
 
 > A smarter approach to medication adherence — combining real motion sensing, intelligent monitoring, and accessible healthcare technology.
+
 
 ---
 
@@ -54,10 +52,10 @@ Built using the MYOSA ESP32 platform, MediTrack demonstrates how accessible embe
 
 Medication adherence directly affects treatment effectiveness, recovery outcomes, and patient safety. Missed doses can result in:
 
-* worsening medical conditions,
-* avoidable hospital visits,
-* reduced treatment effectiveness,
-* and increased healthcare costs.
+* worsening medical conditions
+* avoidable hospital visits
+* reduced treatment effectiveness
+* increased healthcare costs
 
 MediTrack aims to bridge the gap between simple reminders and actual behavioral adherence monitoring.
 
@@ -75,19 +73,19 @@ MediTrack aims to bridge the gap between simple reminders and actual behavioral 
 ### Images
 
 <p align="center">
-  <img src="/assets/images/meditrack/meditrack-cover.jpg" width="800"><br/>
+  <img src="./assets/images/meditrack/meditrack-hardware.jpg" width="800"><br/>
   <i>MediTrack hardware prototype using MYOSA ESP32, MPU6050, OLED display, and buzzer modules</i>
 </p>
 
 <p align="center">
-  <img src="/assets/images/meditrack/meditrack-dashboard.jpg" width="800"><br/>
+  <img src="./assets/images/meditrack/meditrack-dashboard.jpg" width="800"><br/>
   <i>Real-time local dashboard displaying adherence tracking and medication status</i>
 </p>
 
 ### Videos
 
 <video controls width="100%">
-  <source src="/meditrack-demo.mp4" type="video/mp4">
+  <source src="./meditrack-demo.mp4" type="video/mp4">
 </video>
 
 ---
@@ -104,6 +102,7 @@ For demonstration purposes:
 * Grace period: **15 seconds**
 
 The system automatically transitions through medication states:
+
 `Waiting for Dose → Dose Due → Dose Taken / Dose Delayed / Missed Dose`
 
 This structure allows real-time simulation of medication adherence scenarios during demonstrations.
@@ -116,10 +115,10 @@ Instead of relying on simple button presses or timers, MediTrack uses the MPU605
 
 The system:
 
-* tracks acceleration and orientation changes,
-* detects intentional bottle movement,
-* differentiates between valid intake actions and accidental disturbances,
-* and records medication events accordingly.
+* tracks acceleration and orientation changes
+* detects intentional bottle movement
+* differentiates between valid intake actions and accidental disturbances
+* records medication events accordingly
 
 This creates a more realistic and reliable medication adherence monitoring approach.
 
@@ -129,10 +128,10 @@ This creates a more realistic and reliable medication adherence monitoring appro
 
 The SSD1306 OLED display provides immediate user feedback including:
 
-* medication status,
-* adherence percentage,
-* next dose countdown,
-* and system notifications.
+* medication status
+* adherence percentage
+* next dose countdown
+* system notifications
 
 This allows users to quickly understand their medication schedule and intake history without requiring external devices.
 
@@ -156,11 +155,11 @@ Using the ESP32’s built-in Wi-Fi capability, MediTrack hosts a local healthcar
 
 The dashboard displays:
 
-* current medication status,
-* adherence score,
-* missed dose count,
-* delayed intake events,
-* and live medication timing information.
+* current medication status
+* adherence score
+* missed dose count
+* delayed intake events
+* live medication timing information
 
 This creates a caregiver-friendly monitoring interface without requiring cloud infrastructure.
 
@@ -172,11 +171,11 @@ The system was designed with simplicity, reliability, and accessibility in mind.
 
 Features include:
 
-* real-time embedded processing,
-* local-only operation,
-* low hardware cost,
-* modular sensor integration,
-* and scalable IoT architecture for future healthcare applications.
+* real-time embedded processing
+* local-only operation
+* low hardware cost
+* modular sensor integration
+* scalable IoT architecture for future healthcare applications
 
 ---
 
@@ -204,7 +203,7 @@ Additional connections:
 
 ### Running the System
 
-1. Open `MediTrack.ino` in Arduino IDE
+1. Open `meditrack.ino` in Arduino IDE
 2. Select the ESP32 board and correct COM port
 3. Install required libraries
 4. Upload firmware to the MYOSA ESP32 board
@@ -255,31 +254,16 @@ Then:
 
 ---
 
-## File Structure
-
-```plaintext
-/meditrack
-  ├─ MediTrack/
-  │   └─ MediTrack.ino
-  ├─ meditrack.md
-  ├─ meditrack-cover.jpg
-  ├─ meditrack-dashboard.jpg
-  ├─ meditrack-prototype.jpg
-  └─ meditrack-demo.mp4
-```
-
----
-
 ## Future Improvements
 
 Potential future extensions include:
 
-* multi-user medication profiles,
-* cloud synchronization,
-* caregiver notifications,
-* mobile application support,
-* medication analytics,
-* and AI-assisted adherence prediction.
+* multi-user medication profiles
+* cloud synchronization
+* caregiver notifications
+* mobile application support
+* medication analytics
+* AI-assisted adherence prediction
 
 ---
 
