@@ -88,6 +88,8 @@ MediTrack aims to bridge the gap between simple reminders and actual behavioral 
   <source src="./meditrack-demo.mp4" type="video/mp4">
 </video>
 
+[Download / View Demo Video](./meditrack-demo.mp4)
+
 ---
 
 ## Features (Detailed)
