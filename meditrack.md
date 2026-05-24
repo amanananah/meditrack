@@ -68,7 +68,7 @@ MediTrack aims to bridge the gap between simple reminders and actual behavioral 
 
 ---
 
-## Demo / Examples
+## Demo
 
 ### Images
 
